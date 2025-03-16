@@ -1,0 +1,228 @@
+%------------------------
+% Resume Template
+% Author: Anubhav Singh
+% Github: https://github.com/xprilion
+% License: MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome} 
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+
+%---------------------------------------
+%------------Custom commands------------
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSectionListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSectionListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[2]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTitle}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemWithTitle}[2]{
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }\vspace{-3pt}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+    \item[$\bullet$]\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------
+%%%%%%%%%%  CV STARTS HERE  %%%%%%%%%%
+
+\begin{document}
+
+
+%------------HEADING------------------
+
+\begin{center}
+    \textbf{{\Huge \scshape Ankith Kumar Anawal}} \\
+    \vspace{1pt}
+    \small +91xxxxxxxxxx $|$ \href{mailto:}{\underline{xxxx@gmail.com}} $|$ \href{https://linkedin.com/in/ankithkumar99/}{\underline{linkedin.com/in/ankithkumar99/}}
+\end{center}
+
+
+%------------PROFILE------------------
+
+\section{Profile}
+    \resumeSectionListStart
+        \item
+        Data Engineer with 3+ years of experience in big data and analytics. Experienced in building data platforms, large-scale data pipelines, ETL processes, and data warehouse solutions. Utilized technologies like \textbf{Python, SQL, Spark, Azure Cloud Services, Databricks}.
+        \vspace{-5pt}
+    \resumeSectionListEnd
+
+
+%-----------EDUCATION-----------------
+
+\section{Education}
+    \resumeSectionListStart
+        \resumeSubheading
+            {Jawaharlal Nehru Technological University}{Hyderabad, IN}
+            \resumeSubheadingTitle
+                {Bachelor's in Computer Science and Engineering}{July 2017 -- August 2021}
+    \resumeSectionListEnd 
+
+        
+%--------Technical Skills-------------
+
+\section{Technical Skills}
+    \resumeSectionListStart
+        \resumeItemWithTitle{Languages}{Python, SQL, Java, YAML, C/C++, JavaScript, HTML/CSS}
+        \resumeItemWithTitle{Cloud Skills}{Azure Databricks, Azure Data Factory, Azure Data Lake Storage, Azure DevOps, Salesforce CRM}
+        \resumeItemWithTitle{Databases}{Azure SQL Database, MySQL, MongoDB}
+        \resumeItemWithTitle{Data Engineering}{Apache Spark, Batch and Streaming processing, CICD, ETL/ELT Pipelines}
+        \resumeItemWithTitle{Tools}{Git/GitHub, VSCode, Azure Repos, Azure Storage Explorer, Salesforce Inspector, Microsoft 365}
+    \resumeSectionListEnd
+
+
+%---------------------
+
+\section{Experience}
+    \resumeSectionListStart
+        \resumeSubheading
+            {Tata Consultancy Services}{Hyderabad, IN}
+            \resumeSubheadingTitle
+                {Azure Data Engineer -- Diageo}{November 2023 -- Present}
+                \resumeItemListStart
+                    \resumeItemWithoutTitle{
+                        Developed and enhanced a \textbf{no-code ingestion platform} using PySpark within a \textbf{Medallion Architecture} framework, ensuring scalable and efficient data processing through bronze, silver, and gold layers.
+                    }
+                    \resumeItemWithoutTitle{
+                        Designed and managed YAML-based configurations to automate and streamline the setup of data ingestion workflows, reducing manual intervention and enhancing the flexibility of the platform.
+                    }
+                    \resumeItemWithoutTitle{
+                        Built and optimized \textbf{ETL pipelines} to process and transform large datasets, integrating real-time and batch processing workflows using \textbf{Azure Databricks} and \textbf{Azure Data Lake Storage}.
+                    }
+                    \resumeItemWithoutTitle{
+                        Implemented automated data quality checks and reconciliation processes, reducing errors and improving overall data integrity.
+                    }
+                    \resumeItemWithoutTitle{
+                        Developed a robust \textbf{PII framework}, for securely hashing sensitive data prior to processing and storing it in a secure SQL database, ensuring compliance with GDPR data protection regulations.
+                    }
+                    \resumeItemWithoutTitle{
+                        Conducted PR reviews for new features and optimizations, ensuring adherence to coding standards, best practices, and framework guidelines.
+                    }
+                    \resumeItemWithoutTitle{
+                        Provided support for data architecture and ingestion processes, enabling teams to leverage the data platform for business intelligence and reporting purposes.
+                    }
+                \resumeItemListEnd
+            \resumeSubheadingTitle
+                {Data Analyst -- Diageo}{August 2021 -- November 2023}
+                \resumeItemListStart
+                    \resumeItemWithoutTitle{
+                        Worked extensively with the \textbf{Contract Management} module of \textbf{Salesforce CRM}, which is designed to streamline the creation, management, and tracking of contracts throughout their lifecycle, from creation to the renewal and expiration.
+                    }
+                    \resumeItemWithoutTitle{
+                        Responsible for analyzing and understanding the data model of the Contract Management application, ensuring comprehensive analysis of contract-related data to support reporting and decision-making.
+                    }
+                    \resumeItemWithoutTitle{
+                        Developed and maintained custom reports and dashboards within Salesforce using \textbf{Salesforce Reports and Lightning Components}, enabling real-time visibility into contract statuses and business performance metrics.
+                    }
+                    \resumeItemWithoutTitle{
+                        Shared actionable insights with senior management that directly contributed to a \textbf{15\% increase in new contracts} by optimizing contract strategies and improving lead conversion.
+                    }
+                    \resumeItemWithoutTitle{
+                        Worked with \textbf{Salesforce SOQL (Salesforce Object Query Language)} to extract, filter, and analyze contract-related data, ensuring the accuracy of the data in reports.
+                    }
+                    \resumeItemWithoutTitle{
+                        Performed \textbf{data cleansing and transformation} tasks to ensure data quality and consistency, ensuring the accuracy of contract data in reports.
+                    }
+                    % \resumeItemWithoutTitle{
+                    %     Provided regular updates to senior management on contract performance and proposed recommendations to improve business processes.
+                    % }
+                \resumeItemListEnd
+        \resumeSubheading
+            {Ethical Edufabrica Ltd}{Hyderabad, IN}
+            \resumeSubheadingTitle
+                {Internship}{February 2021 -- March 2021}
+                \resumeItemListStart
+                    \resumeItemWithoutTitle{
+                        Gained hands-on experience in applying \textbf{supervised learning} (e.g., Linear Regression, Decision Trees, SVM) to analyze educational data. Assisted in implementing and optimizing machine learning models to predict student performance, course completion rates, and engagement levels.
+                    }
+                    \resumeItemWithoutTitle{
+                        Collaborated with senior data scientists to conduct \textbf{exploratory data analysis (EDA)} on large educational datasets to identify trends and patterns in student behavior. Worked with \textbf{scikit-learn} to preprocess datasets, clean data, handle missing values, and engineer features for better model accuracy.
+                    }
+                \resumeItemListEnd
+    \resumeSectionListEnd
+
+
+%-----------PROJECTS-----------------
+
+\section{Projects}
+    \resumeSectionListStart
+        \resumeProjectHeading{\textbf{Audio Classification} $|$ \emph{Python, Keras, TensorFlow, CNNs, MFCC, Audio Signal Processing}}{}
+            \resumeItemListStart
+                \resumeItemWithoutTitle{
+                    Developed a deep learning model for audio classification to classify audio signals into predefined categories. Utilized \textbf{CNNs} and \textbf{Mel-frequency cepstral coefficients (MFCC)} to efficiently process and classify audio data.
+                }
+                \resumeItemWithoutTitle{
+                    Applied \textbf{Keras} and \textbf{TensorFlow} frameworks for model training and evaluation, optimizing the model for higher accuracy. Conducted comprehensive data pre-processing including noise reduction, feature extraction, and normalization to improve classification performance.
+                }
+                % \resumeItemWithoutTitle{
+                %     Achieved significant improvements in classification accuracy and demonstrated real-time applications in audio signal processing.
+                % }
+            \resumeItemListEnd
+    \resumeSectionListEnd
+
+\end{document}
